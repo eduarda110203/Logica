@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        
+        {
+            "name": "Rodar Python Limpo",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Depurador do Python: Anexar usando o ID do Processo",
+            "type": "debugpy",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
